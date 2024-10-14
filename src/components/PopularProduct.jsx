@@ -30,8 +30,8 @@ function PopularProduct() {
        <div className="min-h-screen  flex flex-col items-center justify-center">
       {/* Hero Section */}
       <section className="w-full ">
-        <div className="text-center border-b-4 border-gray-800 py-10">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6"> Popular Products </h1>
+        <div className="text-center border-b-4  py-10">
+          <h1 className="text-3xl font-bold text-slate-400 drop-shadow-2xl mb-6"> Popular Products </h1>
         </div>
       </section>
 

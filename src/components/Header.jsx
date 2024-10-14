@@ -28,7 +28,7 @@ const Header = ({ isLogin }) => {
     <header
   className={`${
     isVisible ? "translate-y-0" : "-translate-y-full"
-  } bg-gradient-to-r from-gray-900 via-gray-700 to-slate-900 text-white shadow-gray-800 p-4 shadow-lg fixed top-0 left-0 w-full z-50 transition-transform duration-300`}
+  } bg-gradient-to-r bg-gradient-to-r from-stone-950 via-stone-800 to-slate-900 text-white shadow-gray-800 p-4 shadow-lg fixed top-0 left-0 w-full z-50 transition-transform duration-300`}
 >
   <div className="container flex justify-between md:justify-around items-center">
     <h1 className="text-2xl font-semibold">
@@ -46,36 +46,46 @@ const Header = ({ isLogin }) => {
     </button>
 
     {/* منوی اصلی که در حالت دسکتاپ نمایش داده می‌شود */}
-    <nav className="hidden md:flex xl:mr-24 space-x-7">
+    <nav className="hidden md:flex xl:mr-20 gap-3 space-x-7">
       <Link
         to="/"
-        className="hover:text-gray-950 text-xl font-medium transition-colors"
+        className="hover:text-gray-950 hover:text-xl  text-xl font-medium transition-colors"
       >
         Home
       </Link>
       <Link
         to="/products"
-        className="hover:text-gray-950 text-xl font-medium transition-colors"
+        className="hover:text-gray-950 hover:text-xl  text-xl font-medium transition-colors"
       >
         Products
       </Link>
       <Link
         to="/cart"
-        className="hover:text-gray-950 text-xl font-medium transition-colors"
+        className="hover:text-gray-950 hover:text-xl  text-xl font-medium transition-colors"
       >
         Cart
       </Link>
+      <Link
+        to="/about"
+        className="hover:text-gray-950 hover:text-xl  text-xl font-medium transition-colors"
+      >
+        About us
+      </Link>
 
-      {isLogin ? null : (
+    
+    </nav>
+    <div className=" flex justify-center">
+    {isLogin ? null : (
         <Link
           to="/login"
-          className="hover:text-gray-950 text-xl font-medium transition-colors ml-4"
+          className="hover:text-gray-950 hidden md:block hover:bg-stone-500 bg-stone-800 rounded-lg px-4 py-2 text-xl font-medium transition-colors "
         >
           Login
         </Link>
       )}
-    </nav>
     <CartIcon />
+    </div>
+    
 
     {/* منوی موبایل که با کلیک بر روی همبرگری باز می‌شود */}
     <div

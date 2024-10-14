@@ -59,7 +59,7 @@ function ImageSlider() {
   ];
 
   return <>
-    <section className="w-full  py-6 overflow-hidden">
+    <section className=" w-full  py-6 overflow-hidden">
         <div className="flex items-center space-x-6 animate-scroll-horizontal">
           {/* Repeated logos for infinite scroll effect */}
           {[...images].map((image, i) => (

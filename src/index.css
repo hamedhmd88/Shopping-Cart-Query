@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gradient-to-r from-stone-950 via-stone-800 to-slate-900;
+}
 @keyframes scaleUp {
     from {
       transform: scale(0.9);

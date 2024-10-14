@@ -37,6 +37,8 @@ const ProductList = ({ category }) => {
   if (error) return <div>Error fetching products</div>;
 
   return (
+    <>
+    
     <div className="text-gray-300">
       <div className=" flex flex-col gap-2 justify-around mb-6 md:flex-row">
       <input
@@ -48,7 +50,7 @@ const ProductList = ({ category }) => {
       />
 
       <div className="mb-4">
-        <label htmlFor="sort" className="font-semibold text-gray-800 mr-2">
+        <label htmlFor="sort" className="font-semibold text-slate-400 drop-shadow-2xl mr-2">
           Sort by price:
         </label>
         <select
@@ -57,7 +59,7 @@ const ProductList = ({ category }) => {
           onChange={(e) => setSortOption(e.target.value)}
           className="p-2 bg-zinc-300 text-gray-800 border-2 border-gray-600 rounded-md focus:outline-none focus:border-blue-400"
         >
-          <option value="none">None</option>
+          <option value="all">All</option>
           <option value="lowToHigh">Lowest to Highest</option>
           <option value="highToLow">Highest to Lowest</option>
         </select>
@@ -68,7 +70,7 @@ const ProductList = ({ category }) => {
         {sortedItems.map((product) => (
           <div
             key={product.id}
-            className="bg-neutral-300 h-[400px] border-2 border-gray-700 rounded-xl shadow-lg p-4 hover:shadow-2xl drop-shadow-2xl transition-shadow"
+            className="bg-gray-300 h-[400px] border-2 border-gray-700 rounded-xl shadow-lg p-4 hover:shadow-2xl drop-shadow-2xl transition-shadow"
           >
             <Link to={`/products/${product.id}`}>
               <img
@@ -110,6 +112,7 @@ const ProductList = ({ category }) => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

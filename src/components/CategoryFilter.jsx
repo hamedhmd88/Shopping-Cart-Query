@@ -5,8 +5,8 @@ const categories = ['All', 'electronics', 'jewelery', 'men\'s clothing', 'women\
 
 const CategoryFilter = ({ selectedCategory, setSelectedCategory }) => {
   return (
-    <div className="mb-8">
-      <h3 className="text-lg font-semibold mb-2">Filter by Category</h3>
+    <div className="mb-8 mt-5">
+      <h3 className="text-lg text-slate-400 drop-shadow-2xl font-semibold mb-2">Filter by Category</h3>
       <div className="flex space-x-1 md:space-x-3">
         {categories.map((category) => (
           <button

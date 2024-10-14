@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-900 via-gray-700 to-slate-900 text-white shadow-gray-800 p-6 mt-8">
+    <footer className="bg-gradient-to-r  from-stone-950 via-stone-800 to-slate-900 text-white border-t-2 shadow-gray-800 p-6 mt-8">
       <div className="container mx-auto text-center">
         <p className="mb-4 font-semibold">© 2024 Product Store. All rights reserved.</p>
         <p className=' font-semibold'>Contact us: <span className="text-slate-300">support@productstore.com</span> | Phone: <span className="text-slate-300">(123) 456-789</span></p>

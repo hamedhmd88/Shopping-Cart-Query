@@ -17,6 +17,7 @@ import Footer from "./components/Footer"; // Import Footer
 import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import Product from "./pages/Product";
+import AboutUsPage from "./pages/AboutUsPage";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ function App() {
             <Route path="/" element={<HomePage name={name}/>} />
             {/* Products Page with Category Filter */}
             <Route path="/products" element={<Product />} />
+            <Route path="/about" element={<AboutUsPage />} />
             {/* Product Details Page */}
             <Route path="/products/:id" element={<ProductDetails />} />
             {/* Cart Page */}

@@ -63,7 +63,7 @@ const CartPage = () => {
       </div>
 
       {/* Total Price */}
-      <div className="text-right text-gray-800 mt-3">
+      <div className="text-right text-slate-400 mt-3">
         <h2 className="text-xl font-bold">Total Price: ${totalPrice.toFixed(2)}</h2>
       </div>
 
