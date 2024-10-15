@@ -41,7 +41,7 @@ function SectionHomePage() {
             innovation. Don’t miss out on our top deals!
           </p>
           <Link
-            to="/"
+            to="/products"
             className="bg-green-500 text-white ml-5 px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300"
           >
             {" "}

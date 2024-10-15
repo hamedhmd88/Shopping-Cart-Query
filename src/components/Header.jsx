@@ -46,7 +46,7 @@ const Header = ({ isLogin }) => {
     </button>
 
     {/* منوی اصلی که در حالت دسکتاپ نمایش داده می‌شود */}
-    <nav className="hidden md:flex xl:mr-20 gap-3 space-x-7">
+    <nav className="hidden md:flex xl:mr-14 gap-3 space-x-7">
       <Link
         to="/"
         className="hover:text-gray-950 hover:text-xl  text-xl font-medium transition-colors"
@@ -74,7 +74,7 @@ const Header = ({ isLogin }) => {
 
     
     </nav>
-    <div className=" flex justify-center">
+    <div className=" flex justify-center gap-4 ">
     {isLogin ? null : (
         <Link
           to="/login"

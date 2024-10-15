@@ -7,7 +7,7 @@ const CartIcon = () => {
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
 
   return (
-    <div className="fixed top-4 right-14  md:right-52">
+    <div className="fixed top-4 right-14  md:right-10">
       <Link to="/cart">
         <div className="relative">
           <svg

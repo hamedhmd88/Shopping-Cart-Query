@@ -5,8 +5,16 @@ import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
 import Rating from './Rating ';
 
+import popular1 from "../assets/logo/popular2.png";
+import popular2 from "../assets/logo/popular3.png";
+import popular3 from "../assets/logo/popular4.png";
+import popular4 from "../assets/logo/popular5.png";
+import popular5 from "../assets/logo/popular1.png";
+
 function PopularProduct() {
     const { data: products, isLoading, isError, error } = useQuery("products", fetchProducts);
+
+    const imagesPopular = [ popular1, popular2, popular3, popular4, popular5];
 
     const getFirstFiveWords = (text) => {
         const words = text.split(" ");
@@ -30,34 +38,34 @@ function PopularProduct() {
        <div className="min-h-screen  flex flex-col items-center justify-center">
       {/* Hero Section */}
       <section className="w-full ">
-        <div className="text-center border-b-4  py-10">
+        <div className="text-center border-b-4  py-2">
           <h1 className="text-3xl font-bold text-slate-400 drop-shadow-2xl mb-6"> Popular Products </h1>
         </div>
       </section>
 
       {/* Products Section */}
-      <section className="w-full max-w-6xl  p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <section className="w-full max-w-6xl  p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {/* Show only first five products */}
-        {products.slice(0, 5).map((product) => (
+        {products.slice(1, 5).map((product, index) => (
             <div
             key={product.id}
-            className="bg-neutral-300 h-full w-full border-2 border-gray-700 rounded-xl shadow-lg p-4 hover:shadow-2xl drop-shadow-2xl transition-shadow"
+            className=" h-full w-full border-2 border-gray-700 rounded-xl shadow-inner shadow-gray-500 p-4 hover:shadow-inner hover:shadow-gray-300  drop-shadow-2xl transition-shadow"
           >
             <Link to={`/products/${product.id}`}>
               <img
-                src={product.image}
+                src={imagesPopular[index + 1]}
                 alt={product.title}
                 className="w-full  object-contain mix-blend-multiply mb-4 rounded-2xl"
               />
-              <h3 className="text-lg font-bold mb-2 text-slate-800">
+              <h3 className="text-lg font-bold mb-2 text-gray-400">
                 {getFirstFiveWords(product.title)}
               </h3>
               <div className=" w-full flex justify-center flex-col items-center gap-3">
-                <p className="text-slate-800">Price : ${product.price}</p>
+                <p className="text-gray-400">Price : ${product.price}</p>
                 {/* Display the rating */}
                 <Rating rating={product?.rating?.rate} />
               </div>
-              <p className=" mt-3 text-sm text-slate-800">
+              <p className=" mt-3 text-sm text-gray-400">
                 {getFirstNineWordsDes(product.description)} .....
               </p>
             </Link>

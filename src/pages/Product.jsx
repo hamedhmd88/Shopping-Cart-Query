@@ -16,7 +16,7 @@ function Product() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-6">
             <h1 className=" [text-shadow:_0_8px_8px_rgb(99_102_241_/_0.8)] text-white text-4xl md:text-5xl font-bold">
-               Welcome Product Shop
+            Welcome to the Ultimate Shopping Experience
             </h1>
            
           </div>

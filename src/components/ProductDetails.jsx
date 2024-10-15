@@ -18,13 +18,13 @@ const ProductDetails = () => {
   if (error) return <div>Error fetching product details</div>;
 
   return (
-    <div className="max-w-3xl m-28 mx-auto p-6 bg-zinc-300 shadow-lg rounded-md text-gray-300">
+    <div className="max-w-3xl m-28 mx-auto p-6  border-2 border-gray-400  shadow-lg rounded-2xl text-gray-300">
       <div className="bg-white p-4 rounded-2xl"> 
         <img src={data.image} alt={data.title} className="w-full h-96 object-contain mb-6" />
       </div>
-      <h1 className="text-2xl font-bold m-5 text-gray-800">{data.title}</h1>
-      <p className="text-gray-800 text-lg font-normal m-5">{data.description}</p>
-      <p className="text-lg font-semibold text-gray-800 mb-4">Price: ${data.price}</p>
+      <h1 className="text-2xl font-bold m-5 text-gray-400">{data.title}</h1>
+      <p className="text-gray-400 text-lg font-normal m-5">{data.description}</p>
+      <p className="text-lg font-semibold text-gray-400 mb-4">Price: ${data.price}</p>
       <Rating rating={data.rating.rate} />
       <div className=' flex justify-around items-center'>
       <button
@@ -40,7 +40,7 @@ const ProductDetails = () => {
               >
                 -
               </button>
-              <span className=" text-slate-800">
+              <span className=" text-gray-400">
                 {cart.items.find((item) => item.id === data.id)?.quantity ||
                   0}
               </span>

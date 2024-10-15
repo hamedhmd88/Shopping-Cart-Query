@@ -18,8 +18,8 @@ const HomePage = ({name}) => {
             className="w-full h-96 object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-6">
-            <h1 className=" [text-shadow:_0_8px_8px_rgb(99_102_241_/_0.8)] text-white text-4xl md:text-5xl font-bold">
-              {name} Welcome to the Ultimate Shopping Experience
+            <h1 className=" [text-shadow:_0_8px_8px_rgb(99_102_241_/_0.8)] text-white text-4xl md:text-5xl mb-4 font-bold">
+              {name} Welcome to our website
             </h1>
             <p className="[text-shadow:_0_8px_8px_rgb(99_102_241_/_0.8)] text-gray-200 mt-6 max-w-2xl text-lg">
               Discover the best products at unbeatable prices. Explore our wide
@@ -36,7 +36,7 @@ const HomePage = ({name}) => {
     <SectionHomePage/>
 
     <PopularProduct/>
-    
+
     <Accordn/>
       
     </div>
