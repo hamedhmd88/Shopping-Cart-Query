@@ -4,7 +4,7 @@ function StepOne({ firstName, setFirstName, lastName, setLastName, errors }) {
     <>
       <div className="flex justify-center items-center flex-col">
       <div className="mb-4">
-        <label htmlFor="firstname" className="block text-gray-800">
+        <label htmlFor="firstname" className="block text-gray-400">
           First Name
         </label>
         <input
@@ -12,7 +12,7 @@ function StepOne({ firstName, setFirstName, lastName, setLastName, errors }) {
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
           id="firstname"
-          className={`w-[380px] bg-zinc-100 px-3 py-2 border ${errors.firstName ? "border-red-500" : "border-gray-300"} rounded-lg`}
+          className={`w-[380px] bg-gray-700 text-gray-300 px-3 py-2 border ${errors.firstName ? "border-red-500" : "border-gray-300"} rounded-lg`}
         />
         {errors.firstName && (
           <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>
@@ -20,7 +20,7 @@ function StepOne({ firstName, setFirstName, lastName, setLastName, errors }) {
       </div>
 
       <div className="mb-4">
-        <label htmlFor="lastname" className="block text-gray-800">
+        <label htmlFor="lastname" className="block text-gray-400">
           Last Name
         </label>
         <input
@@ -28,7 +28,7 @@ function StepOne({ firstName, setFirstName, lastName, setLastName, errors }) {
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
           id="lastname"
-          className={`w-[380px] bg-zinc-100 px-3 py-2 border ${errors.lastName ? "border-red-500" : "border-gray-300"} rounded-lg`}
+          className={`w-[380px] bg-gray-700 text-gray-300 px-3 py-2 border ${errors.lastName ? "border-red-500" : "border-gray-300"} rounded-lg`}
         />
         {errors.lastName && (
           <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>

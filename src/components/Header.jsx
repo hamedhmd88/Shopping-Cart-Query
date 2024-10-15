@@ -28,7 +28,7 @@ const Header = ({ isLogin }) => {
     <header
   className={`${
     isVisible ? "translate-y-0" : "-translate-y-full"
-  } bg-gradient-to-r bg-gradient-to-r from-stone-950 via-stone-800 to-slate-900 text-white shadow-gray-800 p-4 shadow-lg fixed top-0 left-0 w-full z-50 transition-transform duration-300`}
+  } bg-gradient-to-r  from-stone-950 via-stone-800 to-slate-900 text-white shadow-gray-800 p-4 shadow-lg fixed top-0 left-0 w-full z-50 transition-transform duration-300`}
 >
   <div className="container flex justify-between md:justify-around items-center">
     <h1 className="text-2xl font-semibold">
@@ -78,7 +78,7 @@ const Header = ({ isLogin }) => {
     {isLogin ? null : (
         <Link
           to="/login"
-          className="hover:text-gray-950 hidden md:block hover:bg-stone-500 bg-stone-800 rounded-lg px-4 py-2 text-xl font-medium transition-colors "
+          className="hover:text-gray-950 hidden md:block hover:bg-gray-500 bg-gray-800 rounded-lg px-4 py-2 text-xl font-medium transition-colors "
         >
           Login
         </Link>

@@ -14,7 +14,7 @@ const AboutUs = () => {
       </div>
 
       <div className="border-l-4 border-b-4 border-gray-600 mt-3">
-        <h2 className="text-3xl md:text-4xl font-bold text-left text-slate-400 mt-8 ml-5">
+        <h2 className="text-3xl italic md:text-4xl font-bold text-left text-slate-400 mt-8 ml-5">
           Who We Are?
         </h2>
 
@@ -27,7 +27,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="border-r-4 border-b-4 border-gray-600 mt-3">
-        <h2 className="text-3xl md:text-4xl font-bold text-left text-slate-400 mt-8 mr-5">
+        <h2 className="text-3xl italic md:text-4xl font-bold text-left text-slate-400 mt-8 mr-5">
         What We Do?
         </h2>
 
@@ -39,7 +39,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="border-l-4 border-b-4 border-gray-600 mt-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-left text-slate-400 mt-8 ml-5">
+        <h2 className="text-3xl italic md:text-4xl font-bold text-left text-slate-400 mt-8 ml-5">
         Where to Find Us?
         </h2>
 

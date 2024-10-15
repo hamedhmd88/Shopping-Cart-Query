@@ -17,8 +17,8 @@ function Accordn() {
 
     return (
         <>
-            <div className="w-full max-w-xl mx-auto mt-10 mb-10">
-                <h2 className="text-3xl font-bold text-center mb-6 text-slate-400 drop-shadow-2xl">Frequently Asked Questions</h2>
+            <div className="w-full max-w-xl mx-auto mb-12">
+                <h2 className="text-3xl italic font-bold text-center mb-6 text-slate-400 drop-shadow-2xl">Frequently Asked Questions</h2>
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
                         <div key={index} className="border-2 border-gray-200 rounded-lg">

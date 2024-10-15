@@ -72,8 +72,8 @@ function LoginForm({ setName, backHandler }) {
   return (
     <>
       <div className=" flex items-center justify-center select-none ">
-        <form onSubmit={changeHandler} className="w-full m-28 max-w-lg p-6 bg-zinc-300 rounded-xl shadow-2xl shadow-zinc-500 border-2 border-zinc-700">
-          <h1 className="text-2xl font-bold text-center mb-6">Registration Form</h1>
+        <form onSubmit={changeHandler} className="w-full m-28 max-w-lg p-12  rounded-xl shadow-xl shadow-gray-500 border-2 border-gray-500">
+          <h1 className="text-2xl font-bold text-gray-400 italic text-center mb-6">Registration Form</h1>
           <div className="flex justify-between mb-6">
             <ProgressBar step={formStep} />
           </div>
@@ -111,7 +111,7 @@ function LoginForm({ setName, backHandler }) {
               <button
                 type="button"
                 onClick={prevStep}
-                className="px-4 py-2 bg-zinc-500 text-white rounded hover:bg-zinc-700"
+                className="px-4 py-2 bg-gray-800 text-gray-200 rounded hover:bg-zinc-700"
               >
                 Previous
               </button>
@@ -120,7 +120,7 @@ function LoginForm({ setName, backHandler }) {
               <button
                 type="button"
                 onClick={nextStep}
-                className="px-4 py-2 bg-zinc-500 text-white rounded hover:bg-zinc-700 ml-auto"
+                className="px-4 py-2 bg-gray-800 text-gray-200 rounded hover:bg-zinc-700 ml-auto"
               >
                 Next
               </button>
@@ -128,7 +128,7 @@ function LoginForm({ setName, backHandler }) {
             {formStep === 2 && (
               <button
                 type="submit"
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-800 ml-auto"
+                className="px-4 py-2 bg-indigo-900 text-white rounded hover:bg-blue-800 ml-auto"
               >
                 Submit
               </button>

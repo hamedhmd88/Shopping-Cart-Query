@@ -16,7 +16,7 @@ function SectionHomePage() {
           />
         </div>
         <div className=" border-l-4 border-blue-500">
-          <h2 className="text-3xl font-bold text-slate-400 drop-shadow-2xl mb-7 ml-5">
+          <h2 className="text-3xl italic font-bold text-slate-400 drop-shadow-2xl mb-7 ml-5">
             Welcome to Our Website
           </h2>
           <p className="text-gray-300 mb-6 ml-5">
@@ -33,7 +33,7 @@ function SectionHomePage() {
       <section className="w-full max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         {/* Text Left, Image Right */}
         <div className="order-2 md:order-1 border-l-4 border-green-500">
-          <h2 className="text-3xl font-bold text-slate-400 drop-shadow-2xl mb-7 ml-5">
+          <h2 className="text-3xl italic font-bold text-slate-400 drop-shadow-2xl mb-7 ml-5">
             Our Featured Products
           </h2>
           <p className="text-gray-300 mb-6 ml-5">
@@ -66,7 +66,7 @@ function SectionHomePage() {
           />
         </div>
         <div className=" ml-2 border-l-4 border-orange-500">
-          <h2 className="text-3xl font-bold text-slate-400 drop-shadow-2xl mb-7 ml-5">
+          <h2 className="text-3xl italic font-bold text-slate-400 drop-shadow-2xl mb-7 ml-5">
             Login to Our Website
           </h2>
           <p className="text-gray-300 mb-6 ml-5">

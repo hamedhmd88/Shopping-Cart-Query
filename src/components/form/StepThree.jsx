@@ -1,7 +1,7 @@
 const StepThree = ({ password, setPassword, confirmPassword, setConfirmPassword, errors }) => (
     <div className="flex justify-center items-center flex-col">
       <div className="mb-4">
-        <label htmlFor="password" className="block text-gray-800">
+        <label htmlFor="password" className="block text-gray-400">
           Password
         </label>
         <input
@@ -9,7 +9,7 @@ const StepThree = ({ password, setPassword, confirmPassword, setConfirmPassword,
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           id="password"
-          className={`w-[380px] bg-zinc-100 px-3 py-2 border ${errors.password ? "border-red-500" : "border-gray-300"} rounded-lg`}
+          className={`w-[380px] bg-gray-700 text-gray-300 px-3 py-2 border ${errors.password ? "border-red-500" : "border-gray-300"} rounded-lg`}
         />
         {errors.password && (
           <p className="text-red-500 text-sm mt-1">{errors.password}</p>
@@ -17,7 +17,7 @@ const StepThree = ({ password, setPassword, confirmPassword, setConfirmPassword,
       </div>
   
       <div className="mb-4">
-        <label htmlFor="confirmPassword" className="block text-gray-800">
+        <label htmlFor="confirmPassword" className="block text-gray-400">
           Confirm Password
         </label>
         <input
@@ -25,7 +25,7 @@ const StepThree = ({ password, setPassword, confirmPassword, setConfirmPassword,
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           id="confirmPassword"
-          className={`w-[380px] bg-zinc-100 px-3 py-2 border ${errors.confirmPassword ? "border-red-500" : "border-gray-300"} rounded-lg`}
+          className={`w-[380px] bg-gray-700 text-gray-300 px-3 py-2 border ${errors.confirmPassword ? "border-red-500" : "border-gray-300"} rounded-lg`}
         />
         {errors.confirmPassword && (
           <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>
